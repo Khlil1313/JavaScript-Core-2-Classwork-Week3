@@ -22,6 +22,16 @@ Write JavaScript below that console.logs:
     --> should log a list of nodes with a length of 3
 
 */
+const paragraphElements = document.querySelectorAll("p");
+const textInPElements = [...paragraphElements].map(p => p.innerText);
+console.log(textInPElements, "textInParagraphElemets");
+
+
+console.log(document.querySelector("#jumbotronText"))
+// console.log(document.querySelectorAll(".primary-content"));
+const elementsInsidePrimaryContent = document.querySelectorAll(".primary-content")
+const paragraphElementsInsidePrimaryContent = [...elementsInsidePrimaryContent].map(elementsInsidePrimaryContent => elementsInsidePrimaryContent.p)
+console.log(paragraphElementsInsidePrimaryContent)
 
 
 /*
